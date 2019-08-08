@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
   { path: 'mutasi', loadChildren: './mutasi/mutasi.module#MutasiPageModule' },
   { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },
-  { path: 'service', loadChildren: './service/service.module#ServicePageModule' },
   { path: 'sidemenu', loadChildren: './sidemenu/sidemenu.module#SidemenuPageModule' },
   { path: 'setting', loadChildren: './setting/setting.module#SettingPageModule' },
 ];
