@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-button menuToggle (click)="sidemenu()"> -->
+    <ion-title style="text-align:center">MUTASI</ion-title>
+  <!-- </ion-button> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+    <div class="bgg" style="background: url('assets/bg-btm.png') no-repeat; background-position: center;">
+<ion-card justify-content-card>
+  <ion-list>
+    <ion-item>
+      <ion-label><font class="text">Pilih Rekening : </font></ion-label>
+      <ion-select placeholder="SelectOne">
+          <ion-select-option value="account1">77813456891</ion-select-option>
+          <ion-select-option value="account2">62810888003</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label><font class="text">Tanggal Mulai : </font></ion-label>
+      <ion-datetime displayFormat="DD MMMM YYYY"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label><font class="text">Tanggal Selesai : </font></ion-label>
+      <ion-datetime displayFormat="DD MMMM YYYY"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <hr>
+  <div padding>
+    <ion-button block color="primary" type="submit">Process</ion-button>
+  </div>
+</ion-card>
+</div>
+</ion-content>

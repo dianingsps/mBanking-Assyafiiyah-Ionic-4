@@ -1,0 +1,182 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <font style="color: black">
+       Home
+      </font>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <!-- <ion-content>
+  <ion-grid no-padding class="top">
+  <ion-row justify-content-center>
+    <img src="assets/logo.png" class="logo"/>
+  </ion-row>
+  <ion-row>
+      <div class="top2">
+          <div class="title">Assyafi'iyah Mobile Banking</div>
+          <div class="text">Sudah pernah aktif sebelumnya?</div>
+        </div>
+  </ion-row>
+  <ion-row justify-content-center>
+    <button class="buttonToken" (click)="getthetoken()">Signup</button>
+  </ion-row>
+  <ion-row justify-content-center>
+    <div class="text">Get The Token Message? <font class="link" (click)="entrance tokens()">HERE!</font></div>
+  </ion-row>
+  </ion-grid>
+  <ion-grid no-padding class="under">
+    <ion-row justify-content-center style="margin-left: -1.5%; margin-bottom: -1.5%">
+
+    </ion-row>
+  </ion-grid>
+  </ion-content> -->
+<ion-content>
+  <div class="bagiansatu">
+    <ion-card class="menus">
+      <ion-grid no-padding>
+        <ion-row justify-content-center>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="card" color="#36884D"></ion-icon>
+            </div>
+            <div>Rekening</div>
+          </ion-col>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="phone-portrait" color="#36884D"></ion-icon>
+            </div>
+            <div>Prabayar</div>
+          </ion-col>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="call" color="#36884D"></ion-icon>
+            </div>
+            <div>Pasca Bayar</div>
+          </ion-col>
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="medkit" color="#36884D"></ion-icon>
+            </div>
+            <div>BPJS</div>
+          </ion-col>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="clock" color="#36884D"></ion-icon>
+            </div>
+            <div>Riwayat</div>
+          </ion-col>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="settings" color="#36884D"></ion-icon>
+            </div>
+            <div>Setings</div>
+          </ion-col>
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="paper" color="#36884D"></ion-icon>
+            </div>
+            <div>Mutasi</div>
+          </ion-col>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="share-alt" color="#36884D"></ion-icon>
+            </div>
+            <div>Transfer</div>
+          </ion-col>
+          <ion-col>
+            <div class="submenu">
+              <ion-icon name="information-circle" color="#36884D"></ion-icon>
+            </div>
+            <div>Cek Saldo</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+  <hr>
+ 
+  <div class="promotion">
+    <font class="subtitle">Promotion</font>
+    <!-- <ion-scroll scrollX="true" direction="x" class="scrollpromo">
+      
+    </ion-scroll> -->
+    <!-- <ion-slides [options]="sliderConfig">
+        <ion-slide *ngFor="let product of cat.products">
+          <div *ngIf="cat.expanded">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  {{ product.name }} 
+                </ion-card-title>
+                <ion-card-content>
+                  <img src="url ('assets/img.jpg')">
+                  <ion-button expand="full" (click)="addToCart(product)">Read More</ion-button>
+                </ion-card-content>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-slide>
+    </ion-slides> -->
+    <ion-slides loop effect="slide" direction="vertical" justify-content-center>
+      <ion-card class="yee">
+          <div><img src="assets/img.jpg"></div>
+        <div>Contoh 1</div>
+      </ion-card>
+      <ion-card class="yee">
+          <div><img src="assets/img.jpg"></div>
+        <div>Contoh 2</div>
+      </ion-card>
+      <ion-card class="yee">
+       <div><img src="assets/img.jpg"></div>
+        <div>Contoh 3</div>
+      </ion-card>
+    </ion-slides>
+  </div>
+  <div class="news" >
+    <font class="subtitle">Headline News</font>
+    <ion-slides loop effect="slide" direction="vertical" justify-content-center>
+        <ion-card class="yee">
+            <div><img src="assets/img.jpg"></div>
+          <div>news 1</div>
+        </ion-card>
+        <ion-card class="yee">
+            <div><img src="assets/img.jpg"></div>
+          <div>news 2</div>
+        </ion-card>
+        <ion-card class="yee">
+         <div><img src="assets/img.jpg"></div>
+          <div>news 3</div>
+        </ion-card>
+      </ion-slides>
+  </div>
+
+  <ion-tabs>
+      <ion-tab-bar>
+        <ion-tab-button tab="account" (click)="account()">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Account</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="register" (click)="signup()">
+          <ion-icon name="list-box"></ion-icon>
+          <ion-label>Register</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="mutasi" (click)="mutasi()">
+          <ion-icon name="paper"></ion-icon>
+          <ion-label>Mutasi</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tabindex="home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+</ion-content>
